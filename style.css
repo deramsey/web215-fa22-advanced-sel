@@ -1,0 +1,74 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    border-bottom: 12px solid #501200;
+    background-color: white;
+}
+
+#nav{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.drkred{
+    color: #851200;
+}
+
+#nav a{
+    font-weight: bold;
+    color: #a03232;
+}
+
+#nav > li {
+    text-align: center;
+    padding: 1.4rem 0;
+}
+
+#nav + h1{
+    text-align: center;
+    font-size: 5vw;
+    padding: 1.2rem 0;
+}
+
+h1 ~ section{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+h1 + section{
+    margin-bottom: 2rem;
+}
+
+header + main {
+    width: 75%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: white;
+}
+
+body{
+    background-color: black;
+}
+
+*[title]{
+    color: #a03232;
+    cursor: pointer;
+}
+
+#nav a[current-page]{
+   color: white;
+}
+
+#nav > li:has(a[current-page]){
+    background-color: #a03232;
+}
+
+p::first-letter{
+    font-size: 2rem;
+}
